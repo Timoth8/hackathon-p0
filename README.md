@@ -13,5 +13,6 @@
 ## Main Dadu 2 Pemain
 - Input: 2 Pemain 
 - Tiap Putaran-roll dadu(math.random)- ambil value dari tiap dadu diakumulasi
+- Permainan selesai ketika di end dan pemenang adalah yang skornya tertinggi
 
 referensi link (https://www.youtube.com/watch?v=Z22B9ZjcIC4&t=13s)
