@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Lempar Dadu Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="nameInputContainer">
+    <h1>Masukkan Nama Pemain</h1>
+    <div class="name-inputs">
+      <input type="text" id="player1Name" placeholder="Nama Player 1" />
+      <input type="text" id="player2Name" placeholder="Nama Player 2" />
+    </div>
+    <button id="startGame">Mulai Game</button>
+  </div>
+
+  <div id="gameContainer" style="display: none;">
+    <h1>Game Lempar Dadu Multiplayer</h1>
+    <div class="dice">🎲</div>
+    <button id="rollDice">Lempar Dadu</button>
+    <div class="players">
+      <div class="player" id="player1">Player 1: <span id="score1">0</span></div>
+      <div class="player" id="player2">Player 2: <span id="score2">0</span></div>
+    </div>
+    <p id="turnInfo">Giliran: Player 1 (Lemparan ke-1)</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
