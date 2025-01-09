@@ -1,9 +1,10 @@
-/* Global Styles */
+/* ganti biar font judul gamenya jadi VT323 */
+/* TERUS GANTI BIAR KOTAK PLAYERNYA DI BAWAH JUDUL */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'VT323', monospace;
     text-align: center;
-    background-color: #228B22; /* Hijau meja biliar */
-    color: #fff; /* Warna teks putih */
+    background-color: rgb(8, 8, 67); 
+    color: #362e2e; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,21 +14,25 @@ body {
     height: 100vh;
     overflow: hidden;
   }
-  
+
   h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #f4f4f4;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
-  
+
+  /* bg{
+    background-image: url(otpih0n25xWX1A8czq8-o.jpg);
+  } */
+
   /* Dice Styles */
   .dice {
     font-size: 100px;
     margin: 20px auto;
     display: inline-block;
     transition: transform 1s ease;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    background: linear-gradient(145deg, white, white);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     padding: 20px;
@@ -76,7 +81,7 @@ body {
     padding: 15px 30px;
     font-size: 18px;
     margin-top: 20px;
-    background: linear-gradient(145deg, #007bff, #0056b3);
+    background: linear-gradient(145deg, #000127, #00062b);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -86,13 +91,13 @@ body {
   }
   
   button:disabled {
-    background: #aaa;
+    background: #000000;
     cursor: not-allowed;
   }
   
   button:hover:enabled {
     transform: scale(1.1);
-    background: linear-gradient(145deg, #0056b3, #007bff);
+    background: linear-gradient(145deg, #00072b, #001327);
   }
   
   /* Player Panel Styles */
@@ -119,17 +124,17 @@ body {
   }
   
   .active {
-    background: linear-gradient(145deg, #28a745, #218838);
+    background: linear-gradient(145deg, #000221, #050027);
     color: #fff;
-    border-color: #28a745;
+    border-color: #000620;
   }
   
   #player1.active {
-    border-color: #28a745;
+    border-color: #000029;
   }
   
   #player2.active {
-    border-color: #17a2b8;
+    border-color: #1742b8;
   }
   
   /* Turn Info */
@@ -173,5 +178,3 @@ body {
   #startGame:hover {
     background-color: #0056b3;
   }
-  
-  
