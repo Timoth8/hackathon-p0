@@ -1,12 +1,12 @@
 // Select elements
-const nameInputContainer = document.getElementById('nameInputContainer');
+const nameInputContainer = document.getElementById('nameInputContainer'); // Label penampung nama
 const gameContainer = document.getElementById('gameContainer');
-const startGameButton = document.getElementById('startGame');
-const player1NameInput = document.getElementById('player1Name');
-const player2NameInput = document.getElementById('player2Name');
-const player1Div = document.getElementById('player1');
+const startGameButton = document.getElementById('startGame'); // tombol saat masuk / input nama pemain
+const player1NameInput = document.getElementById('player1Name'); // Inputan berupa karakter untuk nama pemain 1
+const player2NameInput = document.getElementById('player2Name'); // Inputan berupa karakter untuk nama pemain 2
+const player1Div = document.getElementById('player1'); // nama penampung skor
 const player2Div = document.getElementById('player2');
-const turnInfo = document.getElementById('turnInfo');
+const turnInfo = document.getElementById('turnInfo'); // menampilkan giliran siapa
 
 // Other game elements
 const dice = document.querySelector('.dice');
@@ -14,7 +14,7 @@ const rollButton = document.getElementById('rollDice');
 const score1 = document.getElementById('score1');
 const score2 = document.getElementById('score2');
 
-// Initialize game state
+// variable penampung
 let scores = [0, 0];
 let rolls = [0, 0];
 let currentPlayer = 0;
@@ -22,13 +22,20 @@ let totalRolls = 0;
 
 // Function to start the game
 startGameButton.addEventListener('click', () => {
-  const player1Name = player1NameInput.value.trim();
-  const player2Name = player2NameInput.value.trim();
+  let player1Name = player1NameInput.value.trim();
+  let player2Name = player2NameInput.value.trim();
 
   if (!player1Name || !player2Name) {
     alert('Silakan masukkan nama kedua pemain!');
     return;
   }
+  if (player1Name.length>20) {
+    player1Name=player1Name.substring(0,20)
+  } 
+  if (player2Name.length>20) {
+    player2Name=player2Name.substring(0,20)
+  } 
+  
 
   // Update player names
   player1Div.textContent = `${player1Name}: 0`;
